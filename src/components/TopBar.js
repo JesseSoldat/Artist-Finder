@@ -24,15 +24,18 @@ const TopBar = () => (
 			</NavDropdown>
 		</Nav>
 		<Nav pullRight>
-			<LinkContainer to="/home">
-				<NavItem eventKey={1}>Home</NavItem>
+			<LinkContainer to="/">
+				<NavItem eventKey={1}>Dashboard</NavItem>
 			</LinkContainer>
-			<LinkContainer to="/book">
-				<NavItem eventKey={2}>Book Inv</NavItem>
+			<LinkContainer to="/artist">
+				<NavItem eventKey={2}>Artist Search</NavItem>
 			</LinkContainer>
 			<NavDropdown eventKey={3} title="Authorization" id="basic-nav-dropdown">
 				<LinkContainer to="/logout">
 					<MenuItem eventKey={3.1}>Logout</MenuItem>
+				</LinkContainer>
+				<LinkContainer to="/login">
+					<MenuItem eventKey={3.2}>Login</MenuItem>
 				</LinkContainer>
 			</NavDropdown> 
 		</Nav>
